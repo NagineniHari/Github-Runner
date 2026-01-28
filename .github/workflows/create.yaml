@@ -23,3 +23,9 @@ jobs:
         
       - name: initialize terraform using init command
         run: terraform init
+
+      - name: plan the terraform code
+        run: terraform plan
+
+      - name: Apply the terraform code
+        run: terraform apply -auto-approve
